@@ -17,7 +17,7 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "yarn": "^1.13.0"
+    "yarn": "^1.22.13"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
