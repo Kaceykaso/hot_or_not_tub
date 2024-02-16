@@ -1,10 +1,30 @@
-# hot_or_not_tub
+# React + TypeScript + Vite
 
-*Hot or Not Tub*
-It is what it sounds like: a rating database for awesome hot tubs, and not so functional luke-warm whirlpools, that is searchable, and contributible! 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Looking for a hot tub in your area? _We got you fam!_
+Currently, two official plugins are available:
 
-Need to warn people of a disappointing not tub you just found? _Let us be your soapbox!_
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-This site is built with React and internet magic (Node, Gatsby, Yarn).
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
