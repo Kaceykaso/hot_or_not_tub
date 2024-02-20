@@ -1,30 +1,10 @@
-# React + TypeScript + Vite
+# Hot or Not Tub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Have you looked for a hotel or other lodging for travel, purely filtered on whether or not they have a hot tub, book based on that prefence - only to find out their hot tub is out of order, cold, or otherwise lacking? That's a *NOT TUB*. If only there was an additional way to find reviews or ratings that tell you whether an establishment's "hot tub" is truly a hot tub, or a not tub.
 
-Currently, two official plugins are available:
+##API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+/getTubs - returns list of hotels (by default only hotels that advertise as having a hot tub are saved)
 
-## Expanding the ESLint configuration
+/getHot - returns filtered lsit of hotels that have been currated by users to have legit hot tubs
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
